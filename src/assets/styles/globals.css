@@ -1,0 +1,37 @@
+@import url('utils/reset');
+@import url('utils/container');
+
+
+:root {}
+
+body, #__app {
+  min-height: calc(var(--realVh, 1vh) * 100);
+}
+
+.scroll-x-hidden {
+  scrollbar-width: none;
+}
+.scroll-x-hidden::-webkit-scrollbar {
+  display: none;
+  height: 0 !important;
+}
+
+.scroll-y-hidden {
+  scrollbar-width: none;
+}
+.scroll-y-hidden::-webkit-scrollbar {
+  display: none;
+  height: 0 !important;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  @apply !outline-none;
+}
+
+.tippy-content {
+  @apply !p-0;
+}
+
+.tippy-box {
+  @apply !bg-transparent !rounded-0;
+}

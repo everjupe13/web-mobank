@@ -1,0 +1,8 @@
+.container {
+  position: relative;
+
+  width: 100%;
+  max-width: calc(575px + 16px * 2);
+  margin: 0 auto;
+  padding: 0 16px;
+}

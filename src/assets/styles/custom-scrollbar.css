@@ -1,0 +1,20 @@
+::-webkit-scrollbar {
+  @apply w-7;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-grey-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-grey-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-grey-200;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}

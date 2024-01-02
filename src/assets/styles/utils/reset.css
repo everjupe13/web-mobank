@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  height: 100%;
+  width: 100%;
+}
+
+#__app {
+  position: relative;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  text-decoration-skip: objects;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-tap-highlight-color: transparent;
+
+  overflow-x: hidden;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
+}
+
+@media (max-width: 575.99px) {
+  body {
+    overscroll-behavior-y: contain;
+  }
+}
